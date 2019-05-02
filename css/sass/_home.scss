@@ -1,0 +1,177 @@
+body{min-height: 5000px;}
+header{
+    font-family: $mainFont;
+    .top-nav-fluid{
+        background-color: $blue;
+        width: 100%;
+        color:$blue;
+        .top-nav{
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            li{
+                display: inline-block;
+                a{
+                    font-size: 10px;
+                    color:white;
+                }
+            }
+            .top-nav-left{
+                li{
+                    margin-right: 1rem;
+                    padding: 0.4rem 0.1rem;
+                    i{
+                        margin: 0rem 0.4rem;
+                    }
+                    &:last-child{
+                        position: relative;
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
+                        .top-nav-hover{
+                            display: none;
+                            border: 2px solid $blue;
+                            position: absolute;
+                            background-color: white;
+                            top: 100%;
+                            left: -20%;
+                            color:$gray;
+                            z-index: 5;
+                            font-size: 10px;
+                            transition: 0.3 all ease;
+                            li{
+                                cursor: pointer;
+                                padding: 0.3em 8em 0em 0.8em;
+                                transition: 0.3s all ease;
+                                &:hover{
+                                    color: $blue;
+                                    transform: scale(1.1)
+
+                                }
+                                
+                                
+                            }
+                        }
+                    
+                    }
+                }
+
+            }
+            .top-nav-right{
+              
+                &>ul>li{
+                    margin-left: 1rem;
+                    padding: 0.4rem 0.5rem;
+                    &:first-child{
+                      background-color: $orange;
+                }    
+                   
+                     &:last-child{
+                           position: relative;
+                           &:hover{
+                               ul{
+                                   display: block;
+                               }
+                           }
+                           .top-nav-hover{
+                                display: none;
+                                border: 2px solid $blue;
+                                background-color: white;
+                                position: absolute;
+                                top: 100%;
+                                left: -20%;
+                                color:$gray;
+                                z-index: 5;
+                                font-size: 10px;
+                                transition: 0.3 all ease;
+                                li{
+                                   cursor: pointer;
+                                   padding: 0.1em 6em 0em 0.8em;
+                                   transition: 0.3s all ease;
+                                   &:hover{
+                                    color: $blue;
+                                    transform: scale(1.1)
+
+                                    }
+                                
+                                
+                                }
+                           }
+                    }
+                    i{
+                        margin: 0rem 0.4rem;
+                    }
+                }
+
+            }
+        }
+    }
+    .main-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+        .logo{
+
+        }
+        .main-nav-menu{
+            
+             &>li{
+                
+                
+                position: relative;
+                padding: 1rem 1rem;
+                display: inline-block;
+                a{
+                    transition: 0.4s all ease;
+                    color:$gray;
+                    font-size: 12px;
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                    a{
+                        color:$blue;
+                        
+                      }
+                }
+                &:first-child{
+                    a{color:$blue;}
+                    
+                }
+            }
+            &>li{
+                
+                .main-nav-hover{
+                    display: none;
+                    position: absolute;
+                    background-color: $blue;
+                    top: 100%;
+                    left: 0%;
+                    z-index: 2;
+                    li{
+                        white-space: nowrap;
+                        font-size: 0.7em;
+                        cursor: pointer;
+                        padding: 0.9em 6em 0.9em 2em;
+                        color: rgba(255, 255, 255, 0.726);
+                        transition: 0.3s all ease; 
+                         &:hover{
+                                color: white;
+                                background-color: darken($blue,8%);
+                            }
+                        
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+}

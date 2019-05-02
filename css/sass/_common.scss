@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}

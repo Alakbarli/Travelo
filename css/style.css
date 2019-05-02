@@ -1,0 +1,178 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  min-height: 5000px;
+}
+
+header {
+  font-family: "Lato", sans-serif;
+}
+header .top-nav-fluid {
+  background-color: #01B7F2;
+  width: 100%;
+  color: #01B7F2;
+}
+header .top-nav-fluid .top-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .top-nav-fluid .top-nav li {
+  display: inline-block;
+}
+header .top-nav-fluid .top-nav li a {
+  font-size: 10px;
+  color: white;
+}
+header .top-nav-fluid .top-nav .top-nav-left li {
+  margin-right: 1rem;
+  padding: 0.4rem 0.1rem;
+}
+header .top-nav-fluid .top-nav .top-nav-left li i {
+  margin: 0rem 0.4rem;
+}
+header .top-nav-fluid .top-nav .top-nav-left li:last-child {
+  position: relative;
+}
+header .top-nav-fluid .top-nav .top-nav-left li:last-child:hover ul {
+  display: block;
+}
+header .top-nav-fluid .top-nav .top-nav-left li:last-child .top-nav-hover {
+  display: none;
+  border: 2px solid #01B7F2;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: -20%;
+  color: #838383;
+  z-index: 5;
+  font-size: 10px;
+  -webkit-transition: 0.3 all ease;
+  transition: 0.3 all ease;
+}
+header .top-nav-fluid .top-nav .top-nav-left li:last-child .top-nav-hover li {
+  cursor: pointer;
+  padding: 0.3em 8em 0em 0.8em;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+header .top-nav-fluid .top-nav .top-nav-left li:last-child .top-nav-hover li:hover {
+  color: #01B7F2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li {
+  margin-left: 1rem;
+  padding: 0.4rem 0.5rem;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:first-child {
+  background-color: #FDB714;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:last-child {
+  position: relative;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:last-child:hover ul {
+  display: block;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:last-child .top-nav-hover {
+  display: none;
+  border: 2px solid #01B7F2;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: -20%;
+  color: #838383;
+  z-index: 5;
+  font-size: 10px;
+  -webkit-transition: 0.3 all ease;
+  transition: 0.3 all ease;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:last-child .top-nav-hover li {
+  cursor: pointer;
+  padding: 0.1em 6em 0em 0.8em;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li:last-child .top-nav-hover li:hover {
+  color: #01B7F2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+header .top-nav-fluid .top-nav .top-nav-right > ul > li i {
+  margin: 0rem 0.4rem;
+}
+header .main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+header .main-nav .main-nav-menu > li {
+  position: relative;
+  padding: 1rem 1rem;
+  display: inline-block;
+}
+header .main-nav .main-nav-menu > li a {
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  color: #838383;
+  font-size: 12px;
+}
+header .main-nav .main-nav-menu > li:hover ul {
+  display: block;
+}
+header .main-nav .main-nav-menu > li:hover a {
+  color: #01B7F2;
+}
+header .main-nav .main-nav-menu > li:first-child a {
+  color: #01B7F2;
+}
+header .main-nav .main-nav-menu > li .main-nav-hover {
+  display: none;
+  position: absolute;
+  background-color: #01B7F2;
+  top: 100%;
+  left: 0%;
+  z-index: 2;
+}
+header .main-nav .main-nav-menu > li .main-nav-hover li {
+  white-space: nowrap;
+  font-size: 0.7em;
+  cursor: pointer;
+  padding: 0.9em 6em 0.9em 2em;
+  color: rgba(255, 255, 255, 0.726);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+header .main-nav .main-nav-menu > li .main-nav-hover li:hover {
+  color: white;
+  background-color: #0198c9;
+}
