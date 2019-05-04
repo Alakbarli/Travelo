@@ -14,6 +14,10 @@ li {
   list-style-type: none;
 }
 
+p {
+  margin: 0px;
+}
+
 body {
   min-height: 5000px;
 }
@@ -133,11 +137,10 @@ header .main-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px;
 }
 header .main-nav .main-nav-menu > li {
   position: relative;
-  padding: 1rem 1rem;
+  padding: 1.2rem 1rem;
   display: inline-block;
 }
 header .main-nav .main-nav-menu > li a {
@@ -171,8 +174,418 @@ header .main-nav .main-nav-menu > li .main-nav-hover li {
   color: rgba(255, 255, 255, 0.726);
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  border-bottom: 1px solid #0194c4;
 }
 header .main-nav .main-nav-menu > li .main-nav-hover li:hover {
   color: white;
   background-color: #0198c9;
+}
+
+#slider {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+#slider .arrow {
+  cursor: pointer;
+  font-size: 4em;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  top: 50%;
+  z-index: 5;
+}
+#slider .left-arrow {
+  left: 5%;
+}
+#slider .right-arrow {
+  right: 5%;
+}
+#slider .slide {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+}
+#slider .slide li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#slider .slide .slider-image {
+  height: 100%;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#slider .slide .slider-content-1 {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  font-weight: 400;
+  left: 30%;
+  color: white;
+}
+#slider .slide .slider-content-1 span {
+  font-size: 20px;
+}
+#slider .slide .slider-content-1 p {
+  font-size: 25px;
+}
+#slider .slide .slider-content-1 .slider-button a {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid white;
+}
+#slider .slide .slider-content-1 .slider-button a:hover {
+  color: #01B7F2;
+  background-color: white;
+}
+
+#fly-time .search-tabs .active {
+  background: white;
+  color: #01B7F2;
+}
+#fly-time .search-tabs .active:hover {
+  background: white;
+  color: #01B7F2;
+}
+#fly-time .search-tabs li {
+  font-size: 12px;
+  font-weight: 500;
+  color: #838383;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: rgba(255, 255, 255, 0.658);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+#fly-time .search-tabs li:hover {
+  background-color: rgba(255, 255, 255, 0.758);
+  color: #6a6a6a;
+}
+#fly-time .search-tabs-content .select-after {
+  position: relative;
+}
+#fly-time .search-tabs-content p {
+  font-size: 16px;
+  color: #2d3e52;
+}
+#fly-time .search-tabs-content label {
+  font-size: 11px;
+  color: #838383;
+  display: block;
+}
+#fly-time .search-tabs-content input, #fly-time .search-tabs-content select {
+  background-color: #F5F5F5;
+  color: #838383;
+  height: 33px;
+  border: 0px;
+  padding: 0px 15px;
+  width: 100%;
+  font-size: 12px;
+}
+#fly-time .search-tabs-content input option, #fly-time .search-tabs-content select option {
+  color: #838383;
+}
+#fly-time .search-tabs-content .submit-search {
+  cursor: pointer;
+  position: relative;
+  color: white;
+  font-size: 11px;
+  width: 100%;
+  height: 35px;
+}
+#fly-time .search-tabs-content .submit-search span, #fly-time .search-tabs-content .submit-search i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+#fly-time .search-tabs-content .submit-search span {
+  background-color: #98CE44;
+  width: 70%;
+}
+#fly-time .search-tabs-content .submit-search i {
+  width: 30%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #7DB921;
+}
+#fly-time .search-tabs-content .submit-search:hover span {
+  background-color: #7DB921;
+}
+#fly-time .search-tabs-content .submit-search:hover i {
+  background-color: #98CE44;
+}
+
+#popular-destinations {
+  background-color: #F5F5F5;
+}
+#popular-destinations h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2d3e52;
+}
+#popular-destinations .destination-items {
+  width: 100%;
+}
+#popular-destinations .destination-items .destination-image {
+  position: relative;
+  width: 100%;
+  height: 23vh;
+  overflow: hidden;
+}
+#popular-destinations .destination-items .destination-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+#popular-destinations .destination-items .destination-image .overlay {
+  background-color: rgba(1, 182, 242, 0.616);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transform: scale(0.5) rotateY(180deg);
+          transform: scale(0.5) rotateY(180deg);
+  color: white;
+  font-size: 40px;
+  opacity: 0;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+#popular-destinations .destination-items .destination-image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#popular-destinations .destination-items .destination-image:hover .overlay {
+  opacity: 1;
+  -webkit-transform: scale(1) rotateY(0deg);
+          transform: scale(1) rotateY(0deg);
+}
+#popular-destinations .destination-items .destination-text .destination-content a {
+  font-size: 16px;
+  color: #2d3e52;
+  -webkit-transition: 0.3 all ease;
+  transition: 0.3 all ease;
+  display: block;
+  line-height: 12px;
+}
+#popular-destinations .destination-items .destination-text .destination-content span {
+  color: #838383;
+  font-size: 10px;
+}
+#popular-destinations .destination-items .destination-text .destination-price span {
+  color: #838383;
+  font-size: 10px;
+}
+#popular-destinations .destination-items .destination-text .destination-price h4 {
+  font-weight: 400;
+  color: #98CE44;
+  font-size: 20px;
+}
+#popular-destinations .destination-items .destination-text:hover .destination-content a {
+  color: #01B7F2;
+}
+
+#honeymoon {
+  position: relative;
+  background-image: url("../img/global-map.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+#honeymoon .couple-img {
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+}
+#honeymoon .couple-img img {
+  height: 94%;
+  max-height: 100%;
+  min-height: 96%;
+  max-width: 100%;
+  margin-top: 4%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#honeymoon .honeymoon-headig p {
+  font-size: 24px;
+  color: white;
+}
+#honeymoon .honeymoon-headig span {
+  color: #7c9abd;
+  font-size: 13px;
+}
+#honeymoon .honeymoon-content .honeymoon-img {
+  overflow: hidden;
+  position: relative;
+  height: 22vh;
+  width: 100%;
+}
+#honeymoon .honeymoon-content .honeymoon-img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+#honeymoon .honeymoon-content .honeymoon-img .overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 183, 20, 0.616);
+  -webkit-transform: scale(0.5) rotateY(180deg);
+          transform: scale(0.5) rotateY(180deg);
+  color: white;
+  font-size: 40px;
+  opacity: 0;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+#honeymoon .honeymoon-content .honeymoon-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#honeymoon .honeymoon-content .honeymoon-img:hover .overlay {
+  opacity: 1;
+  -webkit-transform: scale(1) rotateY(0deg);
+          transform: scale(1) rotateY(0deg);
+}
+#honeymoon .honeymoon-content .honeymoon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+}
+#honeymoon .honeymoon-content .honeymoon-text p {
+  color: #2d3e52;
+  font-size: 16px;
+}
+#honeymoon .honeymoon-content .honeymoon-text span {
+  color: #838383;
+  font-size: 10px;
+}
+#honeymoon .honeymoon-content .honeymoon-text a {
+  display: inline-block;
+  padding: 3px 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: lightgrey;
+  font-size: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#honeymoon .honeymoon-content .honeymoon-text a:hover {
+  background-color: #98CE44;
+}
+
+#offers {
+  background-color: #F5F5F5;
+}
+#offers .heading {
+  text-align: center;
+}
+#offers .heading h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #2d3e52;
+}
+#offers .heading p {
+  font-size: 13px;
+  color: #838383;
+}
+#offers .offers-content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#offers .offers-content .offers-text {
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#offers .offers-content p {
+  font-size: 16px;
+  color: #2d3e52;
+}
+#offers .offers-content span {
+  font-size: 13px;
+  color: #838383;
+}
+#offers .offers-content a {
+  display: inline-block;
+  padding: 3px 12px;
+  color: white;
+  background-color: lightgray;
+  font-size: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#offers .offers-content a:hover {
+  background-color: #98CE44;
 }

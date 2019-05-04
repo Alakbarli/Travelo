@@ -1,4 +1,7 @@
 body{min-height: 5000px;}
+
+
+//header
 header{
     font-family: $mainFont;
     .top-nav-fluid{
@@ -114,7 +117,6 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0px;
         .logo{
 
         }
@@ -124,7 +126,7 @@ header{
                 
                 
                 position: relative;
-                padding: 1rem 1rem;
+                padding: 1.2rem 1rem;
                 display: inline-block;
                 a{
                     transition: 0.4s all ease;
@@ -161,6 +163,7 @@ header{
                         padding: 0.9em 6em 0.9em 2em;
                         color: rgba(255, 255, 255, 0.726);
                         transition: 0.3s all ease; 
+                        border-bottom: 1px solid darken($blue,9%);
                          &:hover{
                                 color: white;
                                 background-color: darken($blue,8%);
@@ -173,5 +176,439 @@ header{
         }
 
     }
+
+}
+
+//slider
+
+#slider{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    .arrow{
+        cursor: pointer;
+        font-size: 4em;
+        position: absolute;
+        transform: translateY(-50%);
+        color: white;
+        top:50%;
+        z-index: 5;
+    }
+    .left-arrow{
+        left: 5%;
+    }
+    .right-arrow{
+        right: 5%;
+    }
+    .slide{
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        transition: 0.7s all ease-in-out;
+        li{ position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .slider-image{
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+        }
+        
+        .slider-content-1{
+            position: absolute;
+            text-align: center;
+            top: 60%;
+            font-weight: 400;
+            left:30%;
+            span{
+                font-size: 20px;
+            }
+            p{
+                font-size: 25px;
+            }
+            color:white;
+               .slider-button{
+               a{  
+                    transition: 0.3s all ease;
+                    margin: 10px 10px;
+                    padding: 5px 10px;
+                    color: white;
+                    display: inline-block;
+                    font-size: 14px;
+                    border:1px solid white;
+                    &:hover{
+                        color:$blue;
+                        background-color: white;
+                    }
+                }
+               }
+        }
+
+
+    }
+
+}
+
+//flynig-time
+#fly-time{
+    .search-tabs{
+        .active{
+            background: white;
+            color: $blue;
+            &:hover{
+                background: white;
+                color: $blue;
+            }
+        }
+        li{
+            font-size: 12px;
+            font-weight: 500;
+            color: $gray;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 15px;
+            transform: translateY(-100%);
+            background-color: rgba(255, 255, 255, 0.658);
+            transition: 0.3s all ease;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.758);
+                color: darken($gray,10%);
+            }
+
+        }
+
+    }
+    .search-tabs-content{
+        
+        
+        .select-after{
+             position: relative;
+             &::after{
+
+             }
+        }
+        p{
+            font-size: 16px;
+            color:$darkblue;
+        }
+        label{
+            font-size: 11px;
+            color:$gray;
+            display: block;
+
+        }
+        input,select{
+            background-color: $lightgray;
+            color:$gray;
+            height: 33px;
+            border:0px;
+            padding: 0px 15px;
+            width: 100%;
+            font-size: 12px;
+            option{
+                color:$gray;
+            }
+            
+        }
+        .submit-search{
+            cursor: pointer;
+            position: relative;
+            color:white;
+            font-size: 11px;
+            width: 100%;
+            height: 35px;
+            span,i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                transition: 0.4s all ease;
+            }
+           
+            span{
+                 background-color: $lightgreen;
+                 width: 70%;
+                }
+            i{
+               
+                width: 30%;
+                position: absolute;
+                top:0px;
+                right: 0px;
+                background-color: $green;
+            }
+           
+            &:hover{
+                span{
+                    background-color: $green;}
+                i{
+                    background-color: $lightgreen; }
+            }
+        }
+        
+
+    }
+    
+}
+
+//Popular Destinations
+#popular-destinations{
+    background-color: $lightgray;
+    h5{
+        font-size: 20px;
+        font-weight: 400;
+        color:$darkblue;
+    }
+    .destination-items{
+        width: 100%;
+        
+        
+       .destination-image{
+        position: relative;
+        width: 100%;
+        height: 23vh;
+        overflow: hidden;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transition: 0.6s all ease;
+            
+        }
+        .overlay{
+            background-color: $bluergba;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: scale(0.5) rotateY(180deg);
+            color:white;
+            font-size: 40px;
+            opacity: 0;
+            transition: 0.6s all ease;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+            .overlay{
+                opacity: 1;
+                transform: scale(1) rotateY(0deg);
+            }
+
+        }
+       }
+       .destination-text{
+           .destination-content{
+                   a{
+                       font-size: 16px;
+                       color: $darkblue;
+                       transition: 0.3 all ease;
+                       display: block;
+                       line-height: 12px;
+
+                   }
+                   span{
+                       color:$gray;
+                       font-size: 10px;
+                   }
+             }
+             .destination-price{
+               span{
+                       color:$gray;
+                       font-size: 10px;
+                 }
+                 h4{
+                     font-weight: 400;
+                     color: $lightgreen;
+                     font-size: 20px;
+                     }       
+
+            }
+            &:hover{
+                .destination-content{
+                    a{
+                        color:$blue;
+                    }
+                }
+                
+            }
+
+       }
+    }
+
+}
+
+//Honeymoon
+
+#honeymoon{
+     position: relative;
+     background-image: url("../img/global-map.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     .couple-img{
+         overflow: hidden;
+         height: 80vh;
+         width: 100%;
+         img{
+            height: 94%;
+            max-height: 100%;
+            min-height: 96%;
+            max-width: 100%;
+            margin-top: 4%;
+            object-fit: cover;
+       }
+     }
+    
+    .honeymoon-headig{
+        p{
+            font-size: 24px;
+            color: white;
+        }
+        span{
+            color:#7c9abd;
+            font-size: 13px;
+        }
+    }
+    .honeymoon-content{
+        
+        .honeymoon-img{
+            overflow: hidden;
+            position: relative;
+            height: 22vh;
+            width: 100%;
+
+            img{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                transition: 0.6s all ease;
+
+           }
+           .overlay{
+               position: absolute;
+               cursor: pointer;
+               top: 0px;
+               left: 0px;
+               width: 100%;
+               height: 100%;
+               background-color:rgba(253, 183, 20, 0.616);
+               transform: scale(0.5) rotateY(180deg);
+               color:white;
+               font-size: 40px;
+               opacity: 0;
+               transition: 0.6s all ease;
+           }
+           &:hover{
+            img{
+                transform: scale(1.2);
+            }
+            .overlay{
+                opacity: 1;
+                transform: scale(1) rotateY(0deg);
+            }
+
+         }
+        }
+        .honeymoon-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+             width: 100%; 
+             text-align: center;
+             background-color: white;
+             padding: 15px;
+             p{
+                color:$darkblue;
+                font-size: 16px;
+             }
+             span{
+                 color:$gray;
+                 font-size:10px;
+             }
+             a{
+                 display: inline-block;
+                 padding: 3px 5px;
+                 margin-top: 10px;
+                 color:white;
+                 background-color: lightgrey;
+                 font-size: 10px;
+                 transition:all 0.3s ease;
+                 &:hover{
+                     background-color: $lightgreen;
+                 }
+             }
+             
+        }
+    }
+
+}
+
+//OFFERS
+#offers{
+    background-color: $lightgray;
+    .heading{
+        
+        text-align: center;
+        h4{
+            font-size: 24px;
+            font-weight: 400;
+            color: $darkblue;
+        }
+        p{
+            font-size: 13px;
+            color:$gray;
+        }
+    }
+    .offers-content{
+        
+        img{
+            object-fit: cover;
+           // height: 190px;
+            width: 100%;
+        }
+        .offers-text{
+            height: 100%;
+            background-color: white;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        p{
+            font-size: 16px;
+            color:$darkblue;
+
+        }
+        span{
+            font-size: 13px;
+            color:$gray;
+        }
+        a{
+            display: inline-block;
+            padding: 3px 12px;
+            color:white;
+            background-color: lightgray;
+            font-size: 10px;
+            transition:all 0.3s ease;
+            &:hover{
+                background-color: $lightgreen;
+            }
+        }
+    }
+    
 
 }
