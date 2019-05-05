@@ -18,10 +18,6 @@ p {
   margin: 0px;
 }
 
-body {
-  min-height: 5000px;
-}
-
 header {
   font-family: "Lato", sans-serif;
 }
@@ -588,4 +584,252 @@ header .main-nav .main-nav-menu > li .main-nav-hover li:hover {
 }
 #offers .offers-content a:hover {
   background-color: #98CE44;
+}
+
+#about {
+  background-image: url("../img/global-map.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+#about .about-content .about-image {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 72px;
+  overflow: hidden;
+}
+#about .about-content .about-image img {
+  margin-top: -10%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+#about .about-content .about-image .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  background-color: rgba(253, 183, 20, 0.616);
+}
+#about .about-content .about-image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#about .about-content .about-image:hover .overlay {
+  opacity: 0;
+}
+#about .about-content .about-text {
+  padding: 20px 15px;
+  background-color: white;
+}
+#about .about-content .about-text a {
+  color: #2d3e52;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+#about .about-content .about-text a:hover {
+  color: #01B7F2;
+}
+#about .about-content .about-text p {
+  font-size: 14px;
+  color: #838383;
+}
+
+footer .footer-top h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2d3e52;
+  margin-bottom: 25px;
+}
+footer .footer-top .discover li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 8px 0px;
+}
+footer .footer-top .discover li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #838383;
+  font-size: 13px;
+  margin-left: 22px;
+  font-weight: 400;
+}
+footer .footer-top .discover li i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 17px;
+  color: #838383;
+}
+footer .footer-top .discover li:hover a, footer .footer-top .discover li:hover i {
+  color: #01B7F2;
+}
+footer .footer-top .discover li:hover i {
+  left: 20px;
+}
+footer .footer-top .travel-news img {
+  width: 100%;
+  height: 63px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-top .travel-news a {
+  font-size: 14px;
+  color: #01B7F2;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+footer .footer-top .travel-news a:hover {
+  color: rgba(1, 182, 242, 0.616);
+}
+footer .footer-top .travel-news p {
+  font-size: 13px;
+  color: #838383;
+}
+footer .footer-top .travel-news span {
+  font-size: 11px;
+  color: #9e9e9e;
+}
+footer .footer-top .mailing-list p {
+  font-size: 13px;
+  color: #838383;
+  margin-bottom: 20px;
+}
+footer .footer-top .mailing-list .mailing-sending {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+footer .footer-top .mailing-list .mailing-sending input {
+  background: #F5F5F5;
+  color: #838383;
+  font-size: 12px;
+  width: 88%;
+  height: 100%;
+  border: none;
+  text-indent: 15px;
+}
+footer .footer-top .mailing-list .mailing-sending i {
+  background-color: #7DB921;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 12%;
+  height: 100%;
+}
+footer .footer-top .mailing-list .mailing-sending i:hover {
+  background-color: #98CE44;
+}
+footer .footer-top .mailing-list span {
+  font-size: 12px;
+  color: gray;
+}
+footer .footer-top .about-travelo p {
+  font-size: 13px;
+  color: #838383;
+  margin-bottom: 20px;
+}
+footer .footer-top .about-travelo h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2d3e52;
+}
+footer .footer-top .about-travelo h3 i {
+  color: #01B7F2;
+  font-size: 20px;
+  -webkit-transform: rotateX(180deg) rotate(20deg);
+          transform: rotateX(180deg) rotate(20deg);
+}
+footer .footer-top .about-travelo .blue {
+  color: #01B7F2;
+}
+footer .footer-bottom {
+  background-color: #F5F5F5;
+  width: 100%;
+}
+footer .footer-bottom .logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ul-icon-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+.ul-icon-left li a {
+  margin: 10px 5px 10px 0px;
+  background-color: #9e9e9e;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+}
+.ul-icon-left li a i {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 13px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.ul-icon-left li a:hover {
+  background-color: #01B7F2;
+}
+
+.toTopButton {
+  border: 1px solid #01B7F2;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.toTopButton i {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #2d3e52;
+  font-size: 13px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
