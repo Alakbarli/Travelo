@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="index-hotel">
     <header>
         <div class="top-nav-fluid">
                 <div class="container">
@@ -79,7 +79,7 @@
                     
                          <ul class="main-nav-menu d-none d-lg-inline-block">
                              <li>
-                                 <a class="blueT" href="#">HOME</a>
+                                 <a href="index.html">HOME</a>
                                  <ul class="main-nav-hover">
                                      <li>Home Layout 1</li>
                                      <li>Home Layout 2</li>
@@ -95,7 +95,7 @@
                                  </ul>
                             </li>
                              <li>
-                                 <a href="hotel.html">HOTELS</a>
+                                 <a class="blueT" href="#">HOTELS</a>
                                  <ul class="main-nav-hover">
                                      <li>Home Hotels</li>
                                      <li>List View</li>
@@ -454,7 +454,7 @@
         </div>
         <ul class="slide">
             <li>
-                <img class="slider-image" src="img/bg1.png">
+                <img class="slider-image" src="img/h1.png">
                 <div class="slider-content-1">
                       <span>Welcome to World's No.1</span>
                       <p>Travel Based Theme Ever Created</p>
@@ -466,7 +466,7 @@
 
             </li>
             <li>
-                 <img class="slider-image" src="img/bg2.png">
+                 <img class="slider-image" src="img/h2.png">
                  <div class="slider-content-1">
                         <span>Welcome to World's No.1</span>
                         <p>Travel Based Theme Ever Created</p>
@@ -477,7 +477,7 @@
                   </div>
             </li>
             <li>
-                 <img class="slider-image" src="img/bg3.png">
+                 <img class="slider-image" src="img/h3.png">
                  <div class="slider-content-1">
                         <span>Welcome to World's No.1</span>
                         <p>Travel Based Theme Ever Created</p>
@@ -492,7 +492,7 @@
     </section>
       <!-- 
      fly time -->
-     <section id="fly-time" class="mb-4">
+     <section id="fly-time" class="pb-3 mb-4">
         <div class="container">
                 <div class="row">
                         <div class="col-12 d-none d-lg-block">
@@ -1133,330 +1133,550 @@
                </div>
         </div>
     </section>
-      <!-- Popular destinations -->
-    <section id="popular-destinations" class="py-5 my-4">
+      <!-- Recommended Hotels -->
+    <section id="recommended-hotels" class="py-5 my-4">
         <div class="container">
             <div class="row">
-                 <div class="col-12">
+                 <div class="col-8">
                         <h5>
-                                Popular Destination
+                                Recommended Hotels
                         </h5>
+                 </div>
+                 <div class="col-4 recommended-arrow">
+                     <div class="d-flex justify-content-end
+                     align-items-center">
+                     <i class="fas fa-long-arrow-alt-left hotel-left-arrow"></i>
+                     <i class="fas fa-long-arrow-alt-right hotel-right-arrow"></i>    
+                     </div>
+                        
+
                  </div>
             </div>
             <div class="row">
-                <div class="col-6 col-lg-3">
-                    <div class="destination-items">
-                        <div class="destination-image">
-                            <img src="img/destinations01.jpg" alt="">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                    <i class="far fa-plus-square"></i>
-                            </div>
-                        </div>
-                        <div class="destination-text row justify-content-between align-items-center p-2">
-                           <div class="destination-content px-3">
-                               <a href="#">Atlantis - The Palm</a>
-                               <span>PARIS</span>
-                           </div>
-                           <div class="destination-price px-3">
-                               <span>FROM</span>
-                               <h4>$490</h4>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                        <div class="destination-items">
-                                <div class="destination-image">
-                                    <img src="img/destinations02.jpg" alt="">
-                                    <div class="overlay d-flex justify-content-center align-items-center">
-                                            <i class="far fa-plus-square"></i>
+                <div class="col-12 p-0 window">
+                    <div class="hotel-slider w-100 d-flex flex-nowrap">
+                            <div class="col-6 col-lg-3">
+                                    <div class="destination-items">
+                                        <div class="destination-image">
+                                            <img src="img/rechotel1.png" alt="">
+                                            <div class="overlay d-flex justify-content-center align-items-center">
+                                                    <i class="far fa-plus-square"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                                <div class="destination-text row justify-content-between align-items-center p-2">
+                                                        <div class="destination-content">
+                                                            <h4>Gran Canaria</h4>
+                                                            <p>$620</p>
+                                                            <span>AVG/NIGHT</span> 
+                                                        </div>
+                                                        <a class="select-green" href="#">SELECT</a>
+                                                        
+                                               </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="destination-text row justify-content-between align-items-center p-2">
-                                   <div class="destination-content px-3">
-                                       <a href="#">Hilton Hotel</a>
-                                       <span>LONDON</span>
-                                   </div>
-                                   <div class="destination-price px-3">
-                                       <span>FROM</span>
-                                       <h4>$170</h4>
-                                   </div>
-                                </div>
-                            </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                        <div class="destination-items">
-                                <div class="destination-image">
-                                    <img src="img/destinations03.jpg" alt="">
-                                    <div class="overlay d-flex justify-content-center align-items-center">
-                                            <i class="far fa-plus-square"></i>
-                                    </div>
-                                </div>
-                                <div class="destination-text row justify-content-between align-items-center p-2">
-                                   <div class="destination-content px-3">
-                                       <a href="#">MGM Grand</a>
-                                       <span>LAS VEGAS</span>
-                                   </div>
-                                   <div class="destination-price px-3">
-                                       <span>FROM</span>
-                                       <h4>$490</h4>
-                                   </div>
-                                </div>
-                        </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                        <div class="destination-items">
-                                <div class="destination-image">
-                                    <img src="img/destinations04.jpg" alt="">
-                                    <div class="overlay d-flex justify-content-center align-items-center">
-                                            <i class="far fa-plus-square"></i>
-                                    </div>
-                                </div>
-                                <div class="destination-text row justify-content-between align-items-center p-2">
-                                   <div class="destination-content px-3">
-                                       <a href="#">Excelsior Hotel</a>
-                                       <span>SHAMKIR</span>
-                                   </div>
-                                   <div class="destination-price px-3">
-                                       <span>FROM</span>
-                                       <h4>$140</h4>
-                                   </div>
-                                </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-      <!-- Honeymoon -->
-    <section id="honeymoon" class="">
-        <div class="container">
-                <div class="row flex-lg-row-reverse">
-                        
-                        <div class="col-12 col-md-6">
-                            <div class=" my-5 row honeymoon-headig text-center">
-                                <div class="px-5 px-lg-0 col-12">
-                                    <p>
-                                            Popular Destinations for Honeymoon
-                                    </p>
-                                </div>
-                                <div class="px-5 px-lg-0 col-12">
-                                    <span>
-                                            Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque purusac Etiam elerisque mi id faucibus iaculis vitae pulvinar.
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="px-5 px-sm-2 col-12 col-sm-4">
-                                     <div class="honeymoon-content w-100">
-                                         <div class="honeymoon-img">
-                                                <img src="img/places01.jpg">
+                                <div class="col-6 col-lg-3">
+                                        <div class="destination-items">
+                                            <div class="destination-image">
+                                                <img src="img/rech2.png" alt="">
                                                 <div class="overlay d-flex justify-content-center align-items-center">
                                                         <i class="far fa-plus-square"></i>
                                                 </div>
-                                         </div>
-                                         
-                                         <div class="honeymoon-text">
-                                             <p>Paris</p>
-                                             <span>(990 PLACES)</span>
-                                             <a href="">SEE ALL</a>
-                                         </div>
-                                     </div>
-                                </div>
-                                <div class="px-5 px-sm-2 col-12 col-sm-4">
-                                    <div class="honeymoon-content w-100">
-                                        <div class="honeymoon-img">
-                                               <img src="img/places02.jpg">
-                                               <div class="overlay d-flex justify-content-center align-items-center">
-                                                       <i class="far fa-plus-square"></i>
-                                               </div>
+                                            </div>
+                                            <div class="col-12">
+                                                    <div class="destination-text row justify-content-between align-items-center p-2">
+                                                            <div class="destination-content">
+                                                                <h4>Hotel Hilton</h4>
+                                                                <p>$620</p>
+                                                                <span>AVG/NIGHT</span> 
+                                                            </div>
+                                                            <a class="select-green" href="#">SELECT</a>
+                                                            
+                                                   </div>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="honeymoon-text">
-                                            <p>Greece</p>
-                                            <span>(990 PLACES)</span>
-                                             <a href="">SEE ALL</a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <div class="destination-items">
+                                            <div class="destination-image">
+                                                <img src="img/rech3.png" alt="">
+                                                <div class="overlay d-flex justify-content-center align-items-center">
+                                                        <i class="far fa-plus-square"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                    <div class="destination-text row justify-content-between align-items-center p-2">
+                                                            <div class="destination-content">
+                                                                <h4>Roosevelt Hotel</h4>
+                                                                <p>$170</p>
+                                                                <span>AVG/NIGHT</span> 
+                                                            </div>
+                                                            <a class="select-green" href="#">SELECT</a>
+                                                            
+                                                   </div>
+                                            </div>
+                                        </div>
+                               </div>
+                               <div class="col-6 col-lg-3">
+                                    <div class="destination-items">
+                                        <div class="destination-image">
+                                            <img src="img/rech4.png" alt="">
+                                            <div class="overlay d-flex justify-content-center align-items-center">
+                                                    <i class="far fa-plus-square"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                                <div class="destination-text row justify-content-between align-items-center p-2">
+                                                        <div class="destination-content">
+                                                            <h4>Forte Do Vale</h4>
+                                                            <p>$120</p>
+                                                            <span>AVG/NIGHT</span> 
+                                                        </div>
+                                                        <a class="select-green" href="#">SELECT</a>
+                                                        
+                                               </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-5 px-sm-2 col-12 col-sm-4">
-                                    <div class="honeymoon-content w-100">
-                                        <div class="honeymoon-img">
-                                               <img src="img/places03.jpg">
-                                               <div class="overlay d-flex justify-content-center align-items-center">
-                                                       <i class="far fa-plus-square"></i>
-                                               </div>
+                                <div class="col-6 col-lg-3">
+                                        <div class="destination-items">
+                                            <div class="destination-image">
+                                                <img src="img/rechotel1.png" alt="">
+                                                <div class="overlay d-flex justify-content-center align-items-center">
+                                                        <i class="far fa-plus-square"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                    <div class="destination-text row justify-content-between align-items-center p-2">
+                                                            <div class="destination-content">
+                                                                <h4>Gran Canaria</h4>
+                                                                <p>$322</p>
+                                                                <span>AVG/NIGHT</span> 
+                                                            </div>
+                                                            <a class="select-green" href="#">SELECT</a>
+                                                            
+                                                   </div>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="honeymoon-text">
-                                            <p>Australia</p>
-                                            <span>(990 PLACES)</span>
-                                            <a href="">SEE ALL</a>
-                                        </div>
-                                    </div>
-                                </div>               
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 h-100">
-                            
-                                <div class="couple-img">
-                                        <img src="img/couple.png" alt="">
                                 </div>
-                                    
-                            
-                            
-                        </div>
                     </div>
-        </div>
-
-   </section>
-     <!-- OFFERS -->
-   <section id="offers" class="py-5">
-       <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10 heading">
-                    
-                        <h4>Did you know?</h4>
-                        <p>Mauris ullamcorper nibh quis leo ultrices in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique. Nullam placerat lacinia dolor quis pretium. Phasellus vitae lacinia quam, at pellentesque lorem. Sed euismod turpis quis mattis fringilla.</p>
-               
                 </div>
                 
             </div>
-            <div class="row mt-4">
-                <div class="col-12 col-lg-6 mb-4 offers-content">
-                      <div class="row">
-                          <div class="col-5 px-5 px-lg-0 pr-0">
-                                <img src="img/offers01.jpg" alt="">
-                          </div>
-                          <div class="col-12 px-5 px-lg-0 col-lg-7 pl-0">
-                                <div class="offers-text">
-                                        <p>Hire Cars</p>
-                                        <span>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</span>
-                                        <a href="">SEE ALL</a>
-                                </div>
-                          </div>
-                          
-                          
-                      </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-4 offers-content">
-                        <div class="row">
-                            <div class="col-5 px-5 px-lg-0 pr-0">
-                                  <img src="img/offers02.jpg" alt="">
-                            </div>
-                            <div class="col-12 col-lg-7 px-5 px-lg-0 pl-0">
-                                  <div class="offers-text">
-                                          <p>Cruise Deals</p>
-                                          <span>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</span>
-                                          <a href="">SEE ALL</a>
-                                  </div>
-                            </div>
-                            
-                            
-                        </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-4 offers-content">
-                        <div class="row">
-                            <div class="col-5 px-5 px-lg-0 pr-0">
-                                  <img src="img/offers03.jpg" alt="">
-                            </div>
-                            <div class="col-12 col-lg-7 px-5 px-lg-0 pl-0">
-                                  <div class="offers-text">
-                                          <p>Things To Do</p>
-                                          <span>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</span>
-                                          <a href="">SEE ALL</a>
-                                  </div>
-                            </div>
-                            
-                            
-                        </div>
-                 </div>
-                 <div class="col-12 col-lg-6 mb-4 offers-content">
-                        <div class="row">
-                            <div class="col-5 px-5 px-lg-0 pr-0">
-                                  <img src="img/offers04.jpg" alt="">
-                            </div>
-                            <div class="col-12 col-lg-7 px-5 px-lg-0 pl-0">
-                                  <div class="offers-text">
-                                          <p>Fly in Comfort</p>
-                                          <span>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</span>
-                                          <a href="">SEE ALL</a>
-                                  </div>
-                            </div>
-                            
-                            
-                        </div>
-                 </div>
-            </div>
-       </div>
-        
-
-
-   </section>
-
-     <!-- About -->
-    <section id="about" class="py-5">
+        </div>
+    </section>
+      <!-- Hotel Detal -->
+    <section id="hotel-detail">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3 px-3">
-                    <div class="about-content">
-                        <div class="about-image">
-                            <img src="img/about1.jpg" alt="">
-                            <div class="overlay"></div>
+                <div class="col-12 col-lg-6">
+                    <h3>Hot Hotel Details</h3>
+                    <div class="hot-hotel-detal">
+                        <div class="row">
+                             <ul class="details-heading flex-column flex-lg-row w-100">
+                                 <li class="active" data-index="popular"><span>Popular</span><i class="fas fa-caret-down"></i></li>
+                                 <li data-index="a"><span>LAS VEGAS</span><i class="fas fa-caret-down"></i></li>
+                                 <li data-index="a"><span>MIAMI</span><i class="fas fa-caret-down"></i></li>
+                                 <li data-index="a"><span>SAN FRANCISCO</span><i class="fas fa-caret-down"></i></li>
+                                 <li data-index="a"><span>HONG KONG</span><i class="fas fa-caret-down"></i></li>
+                             </ul>
                         </div>
-                        <div class="about-text">
-                            <a href="#">Best Price Guarantee</a>
-                            <p>
-                                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
-                            </p>
+                        <div class="row">
+                                <div class="col-12">
+                                    <div data-index="popular" class="hotel-content row">
+                                       <div class=" px-0 content-img col-2">
+                                           <img src="img/hot-hotel1.png">
+                                           <div class="price-save">
+                                               <span>
+                                                   SAVE
+                                               </span>
+                                               <span>
+                                                   23%
+                                               </span>
+                                           </div>
+                                       </div>
+                                       <div class="content-text col-8">
+                                           <h5>Warwick Hotel</h5>
+                                           <span>NEW YORK, USA</span>
+                                           <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                       </div>
+                                       <div class="content-price px-0 col-2">
+                                           <span>AVG/NIGHT</span>
+                                           <h4>$115</h4>
+                                           <a href="#">SELECT</a>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div data-index="popular" class="hotel-content active pb-0 row">
+                                        <div class=" px-0 content-img col-2">
+                                            <img src="img/hot-hotel1.png">
+                                            <div class="price-save">
+                                                <span>
+                                                    SAVE
+                                                </span>
+                                                <span>
+                                                    23%
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="content-text col-8">
+                                            <h5>Warwick Hotel</h5>
+                                            <span>NEW YORK, USA</span>
+                                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                        </div>
+                                        <div class="content-price px-0 col-2">
+                                            <span>AVG/NIGHT</span>
+                                            <h4>$115</h4>
+                                            <a href="#">SELECT</a>
+                                        </div>
+                                     </div>
+                                </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 px-3">
-                   <div class="about-content">
-                        <div class="about-image">
-                            <img src="img/about2.jpg" alt="">
-                            <div class="overlay"></div>
+                <div class="col-12 col-lg-6">
+                        <h3>What Travelers Say?</h3>
+                        <div class="travelers-say h-100">
+                            <div class="row h-75">
+                                <div class="col-12 h-100">
+                                      <div class="say-window">
+                                           <div class="carus">
+                                                <div class="say-content">
+                                                        <p>This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
+                                                        <div class="travelers d-flex align-items-center mt-4">
+                                                                 
+                                                                      <img src="img/author1.png">
+                                                                      <h5>Jessica Brown<br><small>GUEST</small></h5>
+
+                                                                  
+                                                        </div>
+                                                  </div>
+                                                  <div class="say-content">
+                                                       <p>This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
+                                                       <div class="travelers d-flex align-items-center mt-4">
+                                                                 
+                                                            <img src="img/author2.png">
+                                                            <h5>LIsa Kimberly<br><small>GUEST</small></h5>
+
+                                                        
+                                                        </div>
+                                                    </div>
+                                                   <div class="say-content">
+                                                           <p>This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize your entire trip using their extremely fast website and up to date listings. I’m super excited about my next trip to Paris.</p>
+                                                           <div class="travelers d-flex align-items-center mt-4">
+                                                                 
+                                                                <img src="img/author1.png">
+                                                                <h5>Jessica Brown<br><small>GUEST</small></h5>
+ 
+                                                            </div>
+                                                  </div>
+                                           </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="left-circle col-12 text-right">
+                                       <span class="active" data-left="0%">
+
+                                       </span>
+                                       <span data-left="-100%">
+
+                                       </span>
+                                       <span data-left="-200%">
+
+                                       </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about-text">
-                            <a href="#">Travel Insurance</a>
-                            <p>
-                                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
-                            </p>
-                        </div>
-                   </div>
-                </div>
-                <div class="col-12 col-lg-3 px-3">
-                    <div class="about-content">
-                        <div class="about-image">
-                            <img src="img/about3.jpg" alt="">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="about-text">
-                            <a href="#">Why Chose Us</a>
-                            <p>
-                                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
-                            </p>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-12 col-lg-3 px-3">
-                    <div class="about-content">
-                        <div class="about-image">
-                            <img src="img/about4.jpg" alt="">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="about-text">
-                            <a href="#">Need Help?</a>
-                            <p>
-                                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
 
     </section>
+    
+     <!-- Hotel of Chose -->
+     <section id="recommended-hotels" class="choiseOfHotels py-5 my-4">
+            <div class="container">
+                <div class="row">
+                     <div class="col-8">
+                            <h5>
+                                    Travelers Choice of Hotels
+                            </h5>
+                     </div>
+                     <div class="col-4 recommended-arrow">
+                         <div class="d-flex justify-content-end
+                         align-items-center">
+                         <i class="fas fa-long-arrow-alt-left hotel-left-arrow"></i>
+                         <i class="fas fa-long-arrow-alt-right hotel-right-arrow"></i>    
+                         </div>
+                            
+    
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0 window-hotel">
+                        <div class="hotel-slider w-100 d-flex flex-nowrap">
+                                <div class="col-6 col-lg-3">
+                                        <div class="destination-items">
+                                            <div class="destination-image">
+                                                <img src="img/rechotel1.png" alt="">
+                                                <div class="overlay d-flex justify-content-center align-items-center">
+                                                        <i class="far fa-plus-square"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                    <div class="destination-text row flex-nowrap justify-content-between align-items-center p-2">
+                                                            <div class="destination-content px-3">
+                                                                    <a href="#">Hotel Hilton</a>
+                                                                    <span>PARIS FRANCE</span>
+                                                                </div>
+                                                                <div class="destination-price px-3">
+                                                                    <span>AVG/NIGHT</span>
+                                                                    <h4>$360</h4>
+                                                               </div>  
+                                                            
+                                                   </div>
+
+                                            </div>
+                                            <div class="col-12 hotel-rate border-bottom border-top">
+                                               <div class="d-flex justify-content-between align-items-center">
+                                                   <ul class="d-flex">
+                                                       <li><i class="fas fa-star"></i></li>
+                                                       <li><i class="fas fa-star"></i></li>
+                                                       <li><i class="fas fa-star"></i></li>
+                                                       <li><i class="fas fa-star"></i></li>
+                                                       <li><i class="fas fa-star"></i></li>
+                                                   </ul>
+                                                   <p>270 REVIEWS</p>
+                                               </div> 
+                                            </div>
+                                            <div class="col-12 hotel-about">
+                                                <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                            </div>
+                                            <div class="col-12  hotel-select">
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="">SELECT</a>
+                                                    <a href="">VIEW ON MAP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                            <div class="destination-items">
+                                                <div class="destination-image">
+                                                    <img src="img/rech2.png" alt="">
+                                                    <div class="overlay d-flex justify-content-center align-items-center">
+                                                            <i class="far fa-plus-square"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                        <div class="destination-text row flex-nowrap justify-content-between align-items-center p-2">
+                                                                <div class="destination-content px-3">
+                                                                        <a href="#">Forte Do Vale</a>
+                                                                        <span>ALBUFEIRA</span>
+                                                                    </div>
+                                                                    <div class="destination-price px-3">
+                                                                        <span>AVG/NIGHT</span>
+                                                                        <h4>$188</h4>
+                                                                </div>  
+                                                                
+                                                       </div>
+                                                </div>
+                                                <div class="col-12 hotel-rate border-bottom border-top">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <ul class="d-flex">
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                            </ul>
+                                                            <p>270 REVIEWS</p>
+                                                        </div> 
+                                                     </div>
+                                                     <div class="col-12 hotel-about">
+                                                         <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                                     </div>
+                                                     <div class="col-12  hotel-select">
+                                                         <div class="d-flex justify-content-between">
+                                                             <a href="">SELECT</a>
+                                                             <a href="">VIEW ON MAP</a>
+                                                         </div>
+                                                     </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                            <div class="destination-items">
+                                                <div class="destination-image">
+                                                    <img src="img/rech3.png" alt="">
+                                                    <div class="overlay d-flex justify-content-center align-items-center">
+                                                            <i class="far fa-plus-square"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                        <div class="destination-text row flex-nowrap justify-content-between align-items-center p-2">
+                                                                <div class="destination-content px-3">
+                                                                        <a href="#">Gran Canaria</a>
+                                                                        <span>SPAIN</span>
+                                                                    </div>
+                                                                    <div class="destination-price px-3">
+                                                                        <span>AVG?NIGHT</span>
+                                                                        <h4>$322</h4>
+                                                                </div>  
+                                                                
+                                                       </div>
+                                                </div>
+                                                <div class="col-12 hotel-rate border-bottom border-top">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <ul class="d-flex">
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                            </ul>
+                                                            <p>270 REVIEWS</p>
+                                                        </div> 
+                                                     </div>
+                                                     <div class="col-12 hotel-about">
+                                                         <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                                     </div>
+                                                     <div class="col-12  hotel-select">
+                                                         <div class="d-flex justify-content-between">
+                                                             <a href="">SELECT</a>
+                                                             <a href="">VIEW ON MAP</a>
+                                                         </div>
+                                                     </div>
+                                            </div>
+                                   </div>
+                                   <div class="col-6 col-lg-3">
+                                        <div class="destination-items">
+                                            <div class="destination-image">
+                                                <img src="img/rech4.png" alt="">
+                                                <div class="overlay d-flex justify-content-center align-items-center">
+                                                        <i class="far fa-plus-square"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                    <div class="destination-text row flex-nowrap justify-content-between align-items-center p-2">
+                                                            <div class="destination-content px-3">
+                                                                    <a href="#">Roosevelt Hotel</a>
+                                                                    <span>SHAMKIR</span>
+                                                                </div>
+                                                                <div class="destination-price px-3">
+                                                                    <span>AVG/NIGHT</span>
+                                                                    <h4>$170</h4>
+                                                            </div>  
+                                                            
+                                                   </div>
+                                            </div>
+                                            <div class="col-12 hotel-rate border-bottom border-top">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <ul class="d-flex">
+                                                            <li><i class="fas fa-star"></i></li>
+                                                            <li><i class="fas fa-star"></i></li>
+                                                            <li><i class="fas fa-star"></i></li>
+                                                            <li><i class="fas fa-star"></i></li>
+                                                            <li><i class="fas fa-star"></i></li>
+                                                        </ul>
+                                                        <p>270 REVIEWS</p>
+                                                    </div> 
+                                                 </div>
+                                                 <div class="col-12 hotel-about">
+                                                     <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                                 </div>
+                                                 <div class="col-12  hotel-select">
+                                                     <div class="d-flex justify-content-between">
+                                                         <a href="">SELECT</a>
+                                                         <a href="">VIEW ON MAP</a>
+                                                     </div>
+                                                 </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                            <div class="destination-items">
+                                                <div class="destination-image">
+                                                    <img src="img/rechotel1.png" alt="">
+                                                    <div class="overlay d-flex justify-content-center align-items-center">
+                                                            <i class="far fa-plus-square"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                        <div class="destination-text row flex-nowrap justify-content-between align-items-center p-2">
+                                                                <div class="destination-content px-3">
+                                                                        <a href="#">Hotel Hilton</a>
+                                                                        <span>PARIS FRANCE</span>
+                                                                    </div>
+                                                                    <div class="destination-price px-3">
+                                                                        <span>FROM</span>
+                                                                        <h4>$360</h4>
+                                                                </div>  
+                                                                
+                                                       </div>
+                                                </div>
+                                                <div class="col-12 hotel-rate border-bottom border-top">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <ul class="d-flex">
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                            </ul>
+                                                            <p>270 REVIEWS</p>
+                                                        </div> 
+                                                     </div>
+                                                     <div class="col-12 hotel-about">
+                                                         <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam.</p>
+                                                     </div>
+                                                     <div class="col-12  hotel-select">
+                                                         <div class="d-flex justify-content-between">
+                                                             <a href="">SELECT</a>
+                                                             <a href="">VIEW ON MAP</a>
+                                                         </div>
+                                                     </div>
+                                            </div>
+                                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+     <section id="search-hotels" class="pt-2">
+         <div class="container">
+             <div class="row flex-column  flex-lg-row-reverse">
+                  <div class="col-9 m-auto">
+                      <div class="row align-items-center">
+                          <div class="col-12 col-lg-7">
+                                    <p>
+                                            Tell us where you would like to go.
+                                    </p>   
+                                    <h2>
+                                            12,000+ Hotel and Resorts Available!
+                                    </h2>
+                          </div>
+                          <div class="col-12 col-lg-5">
+                              <div class="row">
+                                  <div class="col-6 col-lg-12 mb-2">  <input placeholder="Enter destination or hotel name" type="text"></div>
+                                  <div class="col-6 col-lg-12"><a href="#">SEARCH HOTELS</a></div>
+                              </div>
+                                  
+                                    
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-3 promo d-flex">
+                      <img src="img/promo.png" alt="">
+                  </div>
+             </div>
+         </div>
+           
+     </section>
 
     <!-- Footer -->
     <footer>
